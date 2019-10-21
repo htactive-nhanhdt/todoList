@@ -1,0 +1,160 @@
+body {
+    background: #c0c0aa;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #1cefff, #c0c0aa);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #1cefff, #c0c0aa); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.App {
+    position: relative;
+}
+.button-add {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    z-index: 1;
+}
+.form-add {
+    display: flex;   
+   width: 60%;
+   margin: 100px auto;
+}
+.cardsTodo {
+    position: absolute;
+    top: 80px;
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.cardsTodo .todoItems {
+    width: 30%;
+    border: 1px solid green;
+    box-shadow: 4px 4px 4px;
+    height: auto;
+}
+.todo{
+    display: flex;
+    justify-content: space-between;
+    background-color:aliceblue;
+    border-radius: 5px;
+    padding: 4px;    
+    margin-bottom: 3px;
+    width: 100%!important;
+    position: relative;
+    animation: bounce-in-fwd 0.5s both;
+
+}
+@keyframes bounce-in-fwd {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+      opacity: 0;
+    }
+    38% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+      opacity: 1;
+    }
+    55% {
+      -webkit-transform: scale(0.7);
+              transform: scale(0.7);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    72% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    81% {
+      -webkit-transform: scale(0.84);
+              transform: scale(0.84);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    89% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    95% {
+      -webkit-transform: scale(0.95);
+              transform: scale(0.95);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }
+  
+.ant-card {
+    width: 100%!important;
+    height: 100%;
+}
+
+.ant-select {
+    position: relative;
+    width: 2.5em;
+    z-index: 7;
+}
+.todo {
+    position: relative;
+}
+.todoName {
+    width:55%;
+    height: auto;   
+    margin-right: 10px; 
+    background-color: chartreuse;
+    text-transform: capitalize;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0.2em;
+    cursor: pointer;
+    border-radius: 2px;
+  
+}
+
+.todoName p {
+    width: 100%;
+    overflow: hidden;
+    margin: 0!important;
+}
+.edit-input {
+    position: relative;
+    z-index: 20;
+    display: flex;
+    width: 85%!important;
+}
+.edit-input input{
+    width: 100%;   
+}
+
+
+.todo-btns {
+    display: flex;
+    width: 40%;
+    justify-content: flex-end;
+}
+.shield {
+    background-color: azure;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+}
+
